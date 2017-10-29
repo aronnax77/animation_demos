@@ -1,0 +1,14 @@
+.spriteAnim {
+  background: url(../images/capguy-walk.png);
+  width: calc(1472px /8);
+  height: 325px;
+  animation-name: walking-man;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(8);
+}
+
+@keyframes walking-man {
+  from {background-position: 0px;}
+  to   {background-position: -1472px;}
+}
