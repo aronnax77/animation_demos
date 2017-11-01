@@ -1,5 +1,19 @@
+/*
+Walking man animation - sprite animation.
+
+Author: Richard Myatt
+Date:   29 October 2017
+
+
+This is an example of a sprite animation which uses css to control the
+animation.  There are many video tutorials on YouTube which explain how this
+is achieved.
+*/
+
+
+
 .spriteAnim {
-  background: url(../images/capguy-walk.png);
+  background: url(https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png);
   width: calc(1472px /8);
   height: 325px;
   animation-name: walking-man;
