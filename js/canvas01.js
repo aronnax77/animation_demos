@@ -1,3 +1,8 @@
+/* A first canvas animation
+   Author: Richard Myatt
+   Date: 1 November 2017
+*/
+
 ctx = document.getElementById("canvas").getContext("2d");
 var canvasWidth = ctx.canvas.width;
 var canvasHeight = ctx.canvas.height;
@@ -19,17 +24,13 @@ function rotate() {
   // rotate 2 degrees
   ctx.rotate(Math.PI /180);
 
-
-
-  // Move registration point back to the top left corner of canvas
+  // move origin back and draw image
   ctx.translate(-canvasWidth/2, -canvasWidth/2);
 
   ctx.fillStyle = "red";
   ctx.fillRect(200, 200, 100, 50);
-  //context.fillRect(canvasWidth/4, canvasWidth/4, canvasWidth/2, canvasHeight/4);
   ctx.fillStyle = "blue";
   ctx.fillRect(200, 250, 100, 50);
-  //ctx.fillRect(canvasWidth/4, canvasWidth/2, canvasWidth/2, canvasHeight/4);
 
   window.requestAnimationFrame(rotate);
 }
