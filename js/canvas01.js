@@ -3,7 +3,7 @@
    Date: 1 November 2017
 */
 
-ctx = document.getElementById("canvas").getContext("2d");
+var ctx = document.getElementById("canvas").getContext("2d");
 var canvasWidth = ctx.canvas.width;
 var canvasHeight = ctx.canvas.height;
 
