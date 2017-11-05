@@ -1,0 +1,18 @@
+/* rocket in the stars
+   Author: Richard Myatt
+   Date: 5 November 2017
+*/
+
+body {
+  background-color: #333;
+}
+
+#canvas_container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#my_canvas {
+  background-color: #fff;
+  border: 1px solid #999;
+}
