@@ -3,23 +3,39 @@ Walking man animation - sprite animation.
 
 Author: Richard Myatt
 Date:   29 October 2017
-
+Revised 20 October 2018 – background added and man repositioned.
 
 This is an example of a sprite animation which uses css to control the
 animation.  There are many video tutorials on YouTube which explain how this
 is achieved.
 */
 
-
+.bg {
+  display: flex;
+  align-items: center;
+  width: 640px;
+  height: 446px;
+  background: url("../images/sprites-background-3.jpg");
+  animation-name: scroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 .spriteAnim {
   background: url(https://cdn.codeandweb.com/blog/2014/11/05/animate-sprites-in-css-with-texturepacker/capguy-walk.png);
   width: calc(1472px /8);
   height: 325px;
+  margin-left: 100px;
   animation-name: walking-man;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: steps(8);
+}
+
+@keyframes scroll {
+  from {background-position: 0px}
+  to   {background-position: -640px}
 }
 
 @keyframes walking-man {
